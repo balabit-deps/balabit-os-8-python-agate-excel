@@ -1,0 +1,49 @@
+Source: python-agate-excel
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Ghislain Antony Vaillant <ghisvail@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-python,
+               dpkg-dev (>= 1.17.14),
+               python-agate-doc <!nodoc>,
+               python3-agate <!nocheck> <!nodoc>,
+               python3-all,
+               python3-doc <!nodoc>,
+               python3-openpyxl <!nocheck> <!nodoc>,
+               python3-setuptools,
+               python3-sphinx <!nodoc>,
+               python3-sphinx-rtd-theme <!nodoc>,
+               python3-xlrd <!nocheck> <!nodoc>,
+               sphinx-common
+Standards-Version: 4.4.1
+Vcs-Browser: https://salsa.debian.org/python-team/modules/python-agate-excel
+Vcs-Git: https://salsa.debian.org/python-team/modules/python-agate-excel.git
+Homepage: http://agate-excel.rtfd.org/
+
+Package: python3-agateexcel
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends}
+Suggests: python-agateexcel-doc <!nodoc>
+Description: support for Excel files in agate
+ Agate-excel adds read support for Excel files (xls and xlsx) to agate. It uses
+ a monkey patching pattern to add read methods for xls and xlsx files to all
+ agate.Table instances after import of the corresponding agateexcel module.
+ .
+ This package provides the modules for Python 3.
+
+Package: python-agateexcel-doc
+Architecture: all
+Multi-Arch: foreign
+Section: doc
+Depends: ${misc:Depends},
+         ${sphinxdoc:Depends}
+Built-Using: ${sphinxdoc:Built-Using}
+Description: documentation for agate-excel
+ Agate-excel adds read support for Excel files (xls and xlsx) to agate. It uses
+ a monkey patching pattern to add read methods for xls and xlsx files to all
+ agate.Table instances after import of the corresponding agateexcel module.
+ .
+ This package provides the documentation.
+Build-Profiles: <!nodoc>

@@ -1,0 +1,38 @@
+python-agate-excel (0.2.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Remove ancient X-Python3-Version field
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Andrius Merkys ]
+  * New upstream version 0.2.3
+  * Refreshing patches.
+  * Bumping debhelper compat level (no changes).
+  * Bumping Standards-Version to 4.4.1 (no changes).
+  * Removing 'sign-tags' directive from debian/gbp.conf.
+
+ -- Andrius Merkys <merkys@debian.org>  Wed, 27 Nov 2019 04:47:26 -0500
+
+python-agate-excel (0.2.1-3) unstable; urgency=medium
+
+  * Bump standards version to 4.0.0, no changes required
+  * Build the docs using the upstream Makefile
+  * Mark doc package multiarch foreign
+  * Release to unstable
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Tue, 25 Jul 2017 20:36:08 +0100
+
+python-agate-excel (0.2.1-2) experimental; urgency=medium
+
+  * Fixup Maintainers, Vcs-Browser and Vcs-Git fields
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 23 Mar 2017 10:30:34 +0000
+
+python-agate-excel (0.2.1-1) experimental; urgency=low
+
+  * Initial release. (Closes: #850449)
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Wed, 22 Mar 2017 11:05:20 +0000
